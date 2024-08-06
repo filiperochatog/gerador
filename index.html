@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Paletas de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Paletas de Cores</h1>
+        <div class="controls">
+            <select id="paletteType">
+                <option value="complementary">Complementar</option>
+                <option value="analogous">Análoga</option>
+                <option value="triadic">Triádica</option>
+                <option value="tetradic">Tetrádica</option>
+            </select>
+            <input type="number" id="colorCount" min="2" max="5" value="5" />
+            <button id="generate">Gerar Paleta</button>
+            <button id="invertColors">Inverter Cores</button>
+        </div>
+        <div id="description" class="description"></div>
+        <div class="palette">
+            <div class="color" id="color1"></div>
+            <div class="color" id="color2"></div>
+            <div class="color" id="color3"></div>
+            <div class="color" id="color4"></div>
+            <div class="color" id="color5"></div>
+        </div>
+        <div class="background-preview" id="backgroundPreview"></div>
+        <button id="eyedropper">Selecionar Cor</button>
+        <div class="eyedropper-description">Clique no botão acima e escolha uma cor em qualquer lugar da tela.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
